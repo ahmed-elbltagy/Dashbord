@@ -15,7 +15,6 @@
   border-radius: 5px;
   cursor: pointer;
   width: fit-content;
-  font-size: 15px;
 }
 .btn-b:hover{
   background-color: var(--alt-color);
@@ -63,7 +62,7 @@
   .btn-o,
   .btn-g,
   .btn-b{
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .btn-r:hover{
@@ -353,7 +352,7 @@
   }
   .f-col{
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
   .font-s{
     font-size: 14px;
