@@ -181,6 +181,9 @@ a{
   .container header .input input:focus{
     width: 170px;
   }
+  .container header .input input{
+    font-size: 11px;
+  }
 }
 /* End header */
 
