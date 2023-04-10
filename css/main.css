@@ -583,7 +583,7 @@ textarea{
 .setting .ico{
   background-color: var(--second-back);
   padding:11.2px;
-  width: 22px;
+  width: 43px;
   border-radius: 6px 0px 0px 6px;
   border-right: none;
   border-right: 1px solid var(--border-color);
@@ -591,6 +591,7 @@ textarea{
 .setting input[type="checkbox"],
 .setting input[type="radio"]{
   appearance: none;
+  -webkit-appearance: none;
 }
 .setting .control label {
   padding-left:30px;
@@ -653,8 +654,8 @@ textarea{
 .setting .manger .radio-1 label::after {
   content: "";
   position: absolute;
+  top: 18%;
   left: 5px;
-  top: 3.4px;
   width: 12px;
   height: 12px;
   background: var(--main-color);
@@ -698,6 +699,19 @@ textarea{
 /* End setting */
 
 /* start profile */
+.profile .toggle label::after, .toggle label .toggle-on, .toggle label .toggle-off {
+  width:10px;
+  height:10px;
+  padding: 2px;
+  font-size: 11px;
+}
+.profile .toggle label {
+  display: block;
+  position: relative;
+  width: 78px;
+  height: 22px;
+}
+
 .profile .img-box{
   width: 300px;
   border-right: 1px solid var(--border-color);

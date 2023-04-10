@@ -367,117 +367,81 @@
     margin-top: 20px;
   }
 }
-.toggler input {
+input {
   appearance: none;
   -webkit-appearance: none;
 }
-.toggler label {
+.toggle label {
   display: block;
   position: relative;
   width: 78px;
   height: 30px;
   border-radius:21px;
   cursor: pointer;
-  color: #fff;
   font-size:14px;
   color:#d6d6d6;
-  transition: .5s;
+  transition: .3s;
 }
-.toggler label::after {
-  display: block;
+.toggle label::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100%;
   background-color:#fff;
-  content: '';
-  animation-name: toggler-size;
+  animation-name: toggle-size;
   animation-duration: 0.3s;
   animation-timing-function: ease-out;
   animation-direction: forwards;
   animation-iteration-count: 1;
   animation-play-state: running;
 } 
-.toggler label::after, .toggler label .toggler-on, .toggler label .toggler-off {
+.toggle label::after, .toggle label .toggle-on, .toggle label .toggle-off {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 50%;
-  left: 19%;
-  width: 15px;
+  left: 20%;
+  width:16px;
   height:15px;
   padding: 2px;
-  transition: .4s;
   transform: translateY(-50%) translateX(-50%);
   transition: left 0.3s ease-in-out, background-color 0.3s ease-out, width 0.4s ease-in-out, height 0.4s ease-in-out, opacity 0.3s ease-in-out;
 }
-.toggler input:checked + label::after, .toggler input:checked + label .toggler-on, .toggler input:checked + label .toggler-off{
+.toggle input:checked + label::after, .toggle input:checked + label .toggle-on, .toggle input:checked + label .toggle-off{
   left: 82%;
 }
-.toggler input:checked + label{
+.toggle input:checked + label{
   background-color: var(--main-color);
   color: var(--main-color);
 }
-.toggler .toggler-on, .toggler .toggler-off {
+.toggle .toggle-on, .toggle .toggle-off {
   z-index: 2;
 }
-.toggler input:not(:checked) + label{
+.toggle input:not(:checked) + label{
   background: #d6d6d6;
 }
-.toggler input:checked + label .toggler-off, .toggler input:not(:checked) + label .toggler-on {
+.toggle input:checked + label .toggle-off, .toggle input:not(:checked) + label .toggle-on {
   width: 0;
   height: 0;
   opacity: 0;
 }
 @media(max-width:767px){
-.toggler label{
+.toggle label{
     width: 65px;
     height: 25px;
     padding: 2px;
   }
-.toggler label::after, .toggler label .toggler-on, .toggler label .toggler-off {
+.toggle label::after, .toggle label .toggle-on, .toggle label .toggle-off {
     width: 13px;
     height: 13px;
+    font-size: 13px;
   }
-  .toggler label::after, .toggler label .toggler-on, .toggler label .toggler-off {
+  .toggle label::after, .toggle label .toggle-on, .toggle label .toggle-off {
   left: 16%;
   }
-.toggler input:checked + label::after, .toggler input:checked + label .toggler-on, .toggler input:checked + label .toggler-off{
+.toggle input:checked + label::after, .toggle input:checked + label .toggle-on, .toggle input:checked + label .toggle-off{
   left: 82%;
   }
-} 
-.toggl .toggle-checkbox {
-  -webkit-appearance: none;
-  appearance: none;
-  display: none;
-}
-.toggl .toggle-switch {
-  background-color: #ccc;
-  width: 78px;
-  height: 20px;
-  border-radius: 16px;
-  position: relative;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.toggl .toggle-switch::before {
-  font-family: var(--fa-style-family-classic);
-  content: "\f00d";
-  font-weight: 800;
-  font-size: 10px;
-  background-color: white;
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  border-radius: 50%;
-  top: 3px;
-  left: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #aaa;
-  transition: 0.3s;
-}
-.toggl .toggle-checkbox:checked + .toggle-switch {
-  background-color: var(--main-color);
-}
-.toggl .toggle-checkbox:checked + .toggle-switch::before {
-  content: "\f00c";
-  left: 60px;
-  color: var(--main-color);
 }
