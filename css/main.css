@@ -751,7 +751,6 @@ textarea{
   flex-grow: 1;
 }
 .profile .data .activities{
-  text-align: center;
   line-height: 1.6;
   flex-grow: 2;
 }
@@ -928,14 +927,25 @@ textarea{
     margin: 0 20px;
   }
 }
+.friends .box .img .icon{
+  display: flex;
+}
 .friends .box .img .icon a{
-  padding:8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: var(--main-transition);
-  margin-right:2px;
+  width: 33px;
+  height:33px; 
+  margin-right:7px;
 }
 .friends .box .img .icon a:hover{
   background-color: var(--main-color);
   color: #fff;
+}
+.friends .butn span,
+.friends .butn span{
+  margin-bottom:10px;
 }
 /* End Friends */
 
