@@ -980,6 +980,7 @@ to {
   justify-content: center;
   align-items: center;
   font-size: 18px;
+  margin-right: 10px;
 }
 .upload :nth-child(2) .ico{
   background-color: #cce3ff;
