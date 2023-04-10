@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Setting</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="this is free dashboard template for training">
+  <meta name="keywords"    content="template dashboard free theme">
+  <meta name="author"      content="Ahmed">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- google font -->
+  <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Cairo:wght@300;400;500;600;700;800;900">
+  <!-- Favicon icon Img -->
+  <link rel="apple-touch-icon"      sizes="180x180"    href="imges/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"      href="imges/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"      href="imges/favicon-16x16.png">
+  <link rel="manifest" href="imges/site.webmanifest">
+  <!-- Normalize File -->
+  <link rel="stylesheet" href="css/Normalize.css">
+  <!-- css FrameWork File-->
+  <link rel="stylesheet" href="css/framework.css">
+  <!-- Css Main File -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+  <!-- start aside -->
+  <aside class="box-sh">
+    <a href="index.html" aria-label="logo"> <img src="imges/logo.png" alt="logo" title="Logo" width="75px" height="136px"> </a>
+    <ul>
+      <li><a href="index.html"      title="Click to Dashboard" aria-label="dashboard"> <i class="ic fa-regular fa-chart-bar fa-fw"></i>       <span>Dashboard</span> </a>
+      <li><a href="settings.html" class="active"  title="Click to Settings"  aria-label="settings">  <i class="ic fa-solid fa-gear fa-fw"></i><span>Settings</span>  </a>
+      <li><a href="profile.html"    title="Click to Profile"   aria-label="profile">   <i class="ic fa-solid fa-user fa-fw"></i>              <span>Profile</span>   </a>
+      <li><a href="project.html"    title="Click to Project"   aria-label="project">   <i class="ic fa-solid fa-diagram-project fa-fw"></i>   <span>Project</span>   </a>
+      <li><a href="courses.html"    title="Click to Courses"   aria-label="courses">   <i class="ic fa-solid fa-graduation-cap fa-fw"></i>    <span>Courses</span>   </a>
+      <li><a href="friends.html"    title="Click to Friends"   aria-label="friends">   <i class="ic fa-regular fa-circle-user fa-fw"></i>     <span>Friends</span>   </a>
+      <li><a href="files.html"      title="Click to Files"     aria-label="files">     <i class="ic fa-regular fa-file fa-fw"></i>            <span>Files</span>     </a>
+      <li><a href="plans.html"      title="Click to Plans"     aria-label="plans">     <i class="ic fa-regular fa-credit-card fa-fw"></i>     <span>Plans</span>     </a>
+    </ul>
+  </aside>
+  <!-- End aside -->
+  <div class="content">
+    <!-- start header -->
+    <header>
+      <div class="input">
+        <input type="search" name="search" aria-label="search" placeholder="Type A Keyword">
+      </div>
+      <div class="bell">
+        <i class="fa-regular fa-bell"></i>
+        <img src="imges/avatar.png" alt="avatar" width="30px" height="30px">
+      </div>
+    </header>
+    <!-- End header -->
+    <section>
+      <h1>Setting</h1>
+      <div class="setting">
+        <div class="bg-w brd-6 p-20">
+          <h2>Site Control</h2>
+          <p class="tex-c fs-15 fw-500 mt-10">Control The Website If There Is Maintenance</p>
+          <div class="d-f it-c jc-b">
+            <div class="mt-25"> Website Control <span class="tex-c fs-14 d-b mt-10">Open / Close Website And Type The Reason</span></div>
+            <div class="toggler">
+              <input id="toggler-1" name="toggler-1" type="checkbox" value="1" checked>
+              <label for="toggler-1">
+                  <i class="toggler-on fa-solid fa-check"></i>
+                  <i class="toggler-off fa-solid fa-xmark"></i>
+              </label>
+          </div>
+          </div>
+          <textarea class="w-f brd-n brd brd-6 p-10 mt-25" name="#" id="#" cols="10" rows="7" placeholder="Close Message Content"></textarea>
+        </div>
+        <div class="bg-w brd-6 p-20 mt-20">
+          <h2>General Info</h2>
+          <p class="tex-c fs-15 fw-500 mt-10 mb-15">General Information About Your Account</p>
+          <div>
+            <label for="f-name" class="d-b pt-15 tex-c fs-15 fw-500">First Name</label>
+            <input class="w-f brd-n brd p-10 brd-6 mt-10" type="text" id="f-name" placeholder="First Name" aria-label="f-Name">
+          </div>
+          <div >
+            <label for="l-name" class="d-b pt-15 tex-c fs-15 fw-500">Last Name</label>
+            <input class="w-f brd-n brd p-10 brd-6 mt-10" type="text" id="l-name" placeholder="Last Name" aria-label="l-Name">
+          </div>
+          <div>
+            <label for="name" class="d-b pt-15 tex-c fs-15 fw-500">Email</label>
+            <div class="d-f it-c gap-15"><input class="w-f brd-n brd p-10 brd-6 mt-10" type="email" placeholder="abc@.com" aria-label="email" disabled> <a class="btn-b mt-10" href="#" title="Change">Change</a></div>
+          </div>
+        </div>
+        <div class="bg-w brd-6 p-20 mt-20">
+          <h2>Security Info</h2>
+          <span class="d-b fs-15 tex-c fw-500 mt-10">Security Information About Your Account</span>
+          <div class="d-f jc-b it-c mt-25 brd-b pb-20">
+            <p>Password <span class="d-b fs-14 tex-c mt-10">Last Change On 25/10/2021</span></p>
+            <a class="btn-b mt-10" href="#" aria-label="Change" title="Change">Change</a>
+          </div>
+          <div class="d-f jc-b it-c mt-25 brd-b pb-20">
+            <p>Two-Factor Authentication <span class="d-b fs-14 tex-c mt-10">Enable / Disable The Feature</span></p>
+            <div class="toggler">
+              <input id="toggler-2" name="toggler-2" type="checkbox" value="1" aria-label="toggler">
+              <label for="toggler-2">
+                  <i class="toggler-on fa-solid fa-check"></i>
+                  <i class="toggler-off fa-solid fa-xmark"></i>
+              </label>
+          </div>
+          </div>
+          <div class="d-f jc-b it-c mt-25 brd-b pb-20">
+            <p>Devices<span class="d-b fs-14 tex-c mt-10">Check The Login Devices List</span></p>
+            <a class="btn-sh" href="#" aria-label="Devices" title="Devices"> Devices</a>
+          </div>
+        </div>
+        <div class="bg-w brd-6 p-20 mt-20">
+          <h2>Social Info</h2>
+          <p class="mt-15 fw-500 fs-15 tex-c">Social Media Information</p>
+          <div class="d-f it-c mt-15 mt-20 ">
+            <i class="fa-brands fa-twitter ico brd tex-c fw-900"></i>
+            <input type="text" class="w-f brd-n brd p-10" placeholder="Twitter Username" aria-label="Twitter-User">
+          </div>
+          <div class="d-f it-c mt-15 ">
+            <i class="fa-brands fa-facebook-f ico brd tex-c fw-900"></i>
+            <input type="text" class="w-f brd-n brd p-10" placeholder="Facebook Username" aria-label="facebook-User">
+          </div>
+          <div class="d-f it-c mt-15 ">
+            <i class="fa-brands fa-linkedin ico brd tex-c fw-900"></i>
+            <input type="text" class="w-f brd-n brd p-10" placeholder="Linkedin Username" aria-label="linkedin-User">
+          </div>
+          <div class="d-f it-c mt-15 ">
+            <i class="fa-brands fa-youtube ico brd tex-c fw-900"></i>
+            <input type="text" class="w-f brd-n brd p-10" placeholder="Youtube Username" aria-label="youtube-User">
+          </div>
+        </div>
+        <div class="control bg-w brd-6 p-20 mt-20">
+          <h2>Widgets Control</h2>
+          <p class="mt-15 fw-500 fs-15 tex-c mb-20 pb-10">Show / Hide Widgets</p>
+          <div class="d-f it-c mb-15">
+            <input type="checkbox" id="one" class="mr-10" checked>
+            <label for="one" class="fs-19 font-ss">Quick Draft</label>
+          </div>
+          <div class="d-f it-c mb-15">
+            <input type="checkbox" id="tow" class="mr-10" checked>
+            <label for="tow" class="fs-19 font-ss">Yearly Targets</label>
+          </div>
+          <div class="d-f it-c mb-15">
+            <input type="checkbox" id="draft" class="mr-10" checked>
+            <label for="draft" class="fs-19 font-ss">Tickets Statistics</label>
+          </div>
+          <div class="d-f it-c mb-15">
+            <input type="checkbox" id="three" class="mr-10" checked>
+            <label for="three" class="fs-19 font-ss">Latest News</label>
+          </div>
+          <div class="d-f it-c mb-15">
+            <input type="checkbox" id="four" class="mr-10">
+            <label for="four" class="fs-19 font-ss">Latest Tasks</label>
+          </div>
+          <div class="d-f it-c mb-15">
+            <input type="checkbox" id="five" class="mr-10"checked>
+            <label for="five" class="fs-19 font-ss">Top Search Items</label>
+          </div>
+        </div>
+        <div class="manger bg-w brd-6 p-20 mt-20">
+          <h2>Backup Manager</h2>
+          <p class="mt-15 fw-500 fs-15 tex-c pb-25">Control Backup Time And Location</p>
+          <div class="radio-1 brd-b">
+            <div class="mb-15">
+              <input type="radio" name="time" id="daily" checked>
+              <label for="daily">Daily</label>
+            </div>
+            <div class="mb-15">
+              <input type="radio" name="time" id="weekly">
+              <label for="weekly">Weekly</label>
+            </div>
+            <div class="mb-15">
+              <input type="radio" name="time" id="monthly">
+              <label for="monthly">Monthly</label>
+            </div>
+          </div>
+          <div class="radio-2 ">
+          <div>
+            <input type="radio" id="server-1" name="server">
+            <label for="server-1" class="t-c brd-6">
+              <i class="fa-solid fa-server ic"></i>
+              <p>Megaman</p>
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="server-2" name="server" checked>
+            <label for="server-2" class="t-c brd-6 ">
+              <i class="fa-solid fa-server ic"></i>
+              <p>Zero</p>
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="server-3" name="server">
+            <label for="server-3"class="t-c  brd-6">
+              <i class="fa-solid fa-server ic"></i>
+              <p>Sigma</p>
+            </label>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+  <!--Font-Awesome Js File  -->
+  <script src="js/all.min.js"></script>
+</body>
+</html>
