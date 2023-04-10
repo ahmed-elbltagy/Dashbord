@@ -901,15 +901,18 @@ textarea{
   position: relative;
 }
 .courses .box .text :nth-child(3) a{
-  z-index: 2;
   position: relative;
-  margin:0px auto;
+}
+.courses .box .text :nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .courses .box .text :nth-child(3)::before{
   position: absolute;
   content: "";
   width: 100%;
-  top: 50%;
+  top: 68%;
   height: 1px;
   background-color: var(--border-color);
 }
