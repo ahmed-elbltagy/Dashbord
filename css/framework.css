@@ -57,16 +57,13 @@
   font-size: 15px;
 }
 @media(max-width:767px){
+  .btn-sh,
   .btn-r,
   .btn-o,
   .btn-g,
   .btn-b{
-    font-size: 15px;
+    font-size: 16px;
   }
-  .btn-sh{
-    font-size: 15px;
-  }
-}
 .btn-r:hover{
   background-color:#d81103;
 }
