@@ -654,7 +654,7 @@ textarea{
 .setting .manger .radio-1 label::after {
   content: "";
   position: absolute;
-  top: 3.5px;
+  top: 3.7px;
   left: 5px;
   width: 12px;
   height: 12px;
@@ -1038,5 +1038,8 @@ to {
   border: 4px solid #fff;
   outline: 3px solid #1f1f1f;
   background-color:#1f1f1f;
+}
+.plans a{
+  padding:5px 12px;
 }
 /* End Plans */

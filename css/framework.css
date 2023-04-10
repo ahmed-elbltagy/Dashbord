@@ -353,6 +353,7 @@
   .f-col{
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 12px;
   }
   .font-s{
     font-size: 14px;
