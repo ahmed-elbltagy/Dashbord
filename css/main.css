@@ -114,17 +114,15 @@ a{
 /* End aside */
 
 .container .content{
-  flex: 1;
   overflow:hidden;
+  flex: 1;
 }
-
 /* start header */
 .container header{
   display: flex;
   justify-content:space-between;
   align-items: center;
-  height: 67px;
-  padding:20px 20px;
+  margin: 20px;
 }
 .container header .input input{
   padding: 10px;
@@ -175,32 +173,34 @@ a{
 }
 @media(max-width:767px){
   .container header{
-    padding:15px 10px;
+    margin: 10px;
   }
   .container header .input input:focus{
     width: 170px;
   }
+  .container header .bell{
+    font-size: 16px;
+}
 }
 /* End header */
 
 /*start section*/
 .container section{
-  margin-top: -20px;
   min-height: 100vh;
   background-color:#f1f5f9 ;
-  padding-bottom: 10px;
+  padding: 10px 20px 20px;
 }
 .container section h1{
   position: relative;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 .container section h1::after,
 .container section h1::before{
   content: "";
   position: absolute;
   height: 3px;
-  bottom:11px;
-  left: 22px;
+  bottom:13px;
+  left: 3px;
 }
 .container section h1::before{
   width:55px;
@@ -211,27 +211,9 @@ a{
   background-color: #fff;
   width: 123px;
 }
-.container section .dash,
-.container section .setting,
-.container section .profile,
-.container section .courses,
-.container section .friends,
-.container section .files,
-.container section .project,
-.container section .plans{
-  margin: 20px 20px;
-}
 @media(max-width:767px){
-.container section .dash,
-.container section .setting,
-.container section .profile,
-.container section .courses,
-.container section .friends,
-.container section .project,
-.container section .files,
-.container section .plans{
-  margin: 0px 1px ;
-  padding:0 10px;
+  .container section{
+  padding:10px 10px 20px;
   }
 }
 /*End section*/
