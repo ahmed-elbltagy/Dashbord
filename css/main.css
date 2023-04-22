@@ -170,7 +170,7 @@ a{
   height:5px;
   border-radius: 50%;
   background-color: #f44336;
-  top:5px;
+  top:8px;
   left:10px
 }
 @media(max-width:767px){
