@@ -93,7 +93,6 @@ a{
 }
   @media(max-width:767px){
     .container aside {
-      position: fixed;
       width: 55px;
       padding: 10px  12px;
     }
@@ -188,7 +187,6 @@ a{
 
 /*start section*/
 .container section{
-/*   min-height: 100vh; */
   background-color:#f1f5f9 ;
   padding: 10px 20px 20px;
 }
