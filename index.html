@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- HTML Meta Tags -->
 <title>Dashboard</title>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport"    content="width=device-width, initial-scale=1.0">
 <meta name="description" content="This is Free Dashboard Template For Training">
-<meta property="og:image"content="imges/logo-icon.png">
-<meta property="og:image:type"  content="imges/png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height"content="1024"> 
 
+  <!-- og:image -->
+  <meta property="og:image" content="imges/og-icon.png" />
 
+  <!-- Favicon icon Img -->
+  <link rel="shortcut icon" href="imges/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png"  href="imges/favicon-32x32.png"          sizes="32x32">
+  <link rel="icon" type="image/png"  href="imges/favicon-16x16.png"          sizes="16x16">
+  <link rel="icon" type="image/png"  href="imges/android-chrome-512x512.png" sizes="512x512">
+  <link rel="icon" type="image/png"  href="imges/android-chrome-192x192.png" sizes="192x192">
+  <link rel="manifest" href="imges/site.webmanifest">
 
   <!-- Font Awesome style -->
   <link rel="stylesheet" href="css/all.min.css">
   <!-- google font -->
   <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Cairo:wght@300;400;500;600;700;800;900">
-  
-  <!-- Favicon icon Img -->
-  <link rel="shortcut icon" href="imges/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon"      sizes="180x180"    href="imges/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32"      href="imges/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16"      href="imges/favicon-16x16.png">
-  <link rel="manifest" href="imges/site.webmanifest">
-  
+
   <!-- Normalize File -->
   <link rel="stylesheet" href="css/Normalize.css">
   <!-- css FrameWork File-->
@@ -37,7 +34,7 @@
 <div class="container">
   <!-- start aside -->
   <aside class="box-sh">
-    <a href="index.html" aria-label="logo"> <img src="imges/logo.png" alt="logo" title="Logo" width="75px" height="136px"> </a>
+    <a href="index.html" aria-label="logo"> <img loading="lazy" src="imges/logo.png" alt="logo" title="Logo" width="75px" height="136px"> </a>
     <ul>
       <li><a href="index.html"    class="active"  title="Click to Dashboard" aria-label="dashboard"> <i class="ic fa-regular fa-chart-bar fa-fw"></i>      <span>Dashboard</span> </a>
       <li><a href="settings.html"  title="Click to Settings"  aria-label="settings">  <i class="ic fa-solid fa-gear fa-fw"></i>             <span>Settings</span>  </a>
@@ -61,7 +58,7 @@
       </div>
       <div class="bell">
         <i class="fa-regular fa-bell mr-10"></i>
-        <img src="imges/avatar.png" alt="avatar " width="37px" height="37px">
+        <img loading="lazy" src="imges/avatar.png" alt="avatar " width="37px" height="37px">
       </div>
     </header>
     <!-- End header -->
@@ -76,10 +73,10 @@
             <h2>Welcome</h2>
             <p class="mt-10">Ahmed</p>
           </div>
-          <img src="imges/welcome.png" alt="welcome" width="250px" height="200px" class="d-n">
+          <img loading="lazy" src="imges/welcome.png" alt="welcome" width="250px" height="200px" class="d-n">
         </div>
         <div class="img">
-          <img src="imges/avatar.png" alt="avatar"width="64px" height="64px" class="brd-50 box-sh">
+          <img loading="lazy" src="imges/avatar.png" alt="avatar"width="64px" height="64px" class="brd-50 box-sh">
         </div>
         <div class="data d-f jc-a  p-20 t-c f-col">
           <div class="fs-17 fw-500 mb-10">Ahmed Nabil <span class="d-b pt-5 tex-c fs-15 font-s">Developer</span></div>
@@ -143,22 +140,22 @@
         <div class="content d-f f-r gap-20 mt-20 jc-c">
           <div class="box d-f f-coll jc-c it-c lin brd p-20 brd-6 ">
             <i class="fa-regular fa-rectangle-list orange fs-26 mb-10"></i>
-            <p class="fs-26 fw-700">2500</p>
+            <p class="fs-26 fw-700" data-goal="2500">0</p>
             <span class="tex-c fs-15">Total</span>
           </div>
           <div class="box d-f f-coll jc-c it-c lin brd p-20 brd-6 ">
             <i class="fa-solid fa-spinner blue fs-26 mb-10"></i>
-            <p class="fs-26 fw-700">500</p>
+            <p class="fs-26 fw-700" data-goal="500">0</p>
             <span class="tex-c fs-15">Pending</span>
           </div>
           <div class="box d-f f-coll jc-c it-c lin brd p-20 brd-6 ">
             <i class="fa-sharp fa-regular fa-circle-check green fs-26 mb-10"></i>
-            <p class="fs-26 fw-700">1900</p>
+            <p class="fs-26 fw-700" data-goal="1900">0</p>
             <span class="tex-c fs-15">Closed</span>
           </div>
           <div class="box d-f f-coll jc-c it-c lin brd p-20 brd-6">
             <i class="fa-regular fa-rectangle-xmark red fs-26 mb-10"></i>
-            <p class="fs-26 fw-700">100</p>
+            <p class="fs-26 fw-700" data-goal="100">0</p>
             <span class="tex-c fs-15">Deleted</span>
           </div>
         </div>
@@ -167,28 +164,28 @@
         <h2>Latest News</h2>
         <div class="d-f it-c jc-b brd-b pt-20 pb-20 f-col">
           <div class="img d-f it-c f-col">
-            <img class="brd-6 mr-10" src="imges/news-01.png" alt="SASS Section" width="100px" height="56px">
+            <img loading="lazy" class="brd-6 mr-10" src="imges/news-01.png" alt="SASS Section" width="100px" height="56px">
             <div><p>Created SASS Section</p> <span class="fs-15 font-s d-b tex-c pt-10">New SASS Examples & Tutorials</span> </div>
           </div>
           <p class="btn-sh">3 Days Ago</p>
         </div>
         <div class="d-f it-c jc-b brd-b pt-20 pb-20 f-col">
           <div class="img d-f it-c f-col">
-            <img class="brd-6 mr-10" src="imges/news-02.png" alt="SASS Section" width="100px" height="56px">
+            <img loading="lazy" class="brd-6 mr-10" src="imges/news-02.png" alt="SASS Section" width="100px" height="56px">
             <div><p>Created SASS Section</p> <span class="fs-15 font-s d-b tex-c pt-10">New SASS Examples & Tutorials</span> </div>
           </div>
           <p class="btn-sh ">3 Days Ago</p>
         </div>
         <div class="d-f it-c jc-b brd-b pt-20 pb-20 f-col">
           <div class="img d-f  it-c f-col">
-            <img class="brd-6 mr-10" src="imges/news-03.png" alt="SASS Section" width="100px" height="56px">
+            <img loading="lazy" class="brd-6 mr-10" src="imges/news-03.png" alt="SASS Section" width="100px" height="56px">
             <div><p>Team Increased</p> <span class="fs-15 font-s d-b tex-c pt-10">3 Developers Joined The Team</span> </div>
           </div>
           <p class="btn-sh ">7 Days Ago</p>
         </div>
         <div class="d-f it-c jc-b pt-20 pb-20 f-col">
           <div class="img d-f it-c f-col">
-            <img class="brd-6 mr-10" src="imges/news-04.png" alt="SASS Section" width="100px" height="56px">
+            <img loading="lazy" class="brd-6 mr-10" src="imges/news-04.png" alt="SASS Section" width="100px" height="56px">
             <div><p>Added Payment Gateway</p> <span class="fs-15 font-s d-b tex-c pt-10">Many New Payment Gateways </span> </div>
           </div>
           <p class="btn-sh ">9 Days Ago</p>
@@ -231,42 +228,42 @@
         <h2>Latest Uploads</h2>
         <div class="d-f it-c jc-b brd-b pt-20 pb-10">
           <div class="img d-f it-c ">
-            <img class="mr-10" src="imges/pdf.svg" alt="pdf-file" width="40px" height="40px">
+            <img loading="lazy" class="mr-10" src="imges/pdf.svg" alt="pdf-file" width="40px" height="40px">
             <div class="font-s"><p>my-file.pdf</p> <span class="fs-15 font-s d-b tex-c pt-10">Elzero</span> </div>
           </div>
           <p class="btn-sh ml-10">2.9mb</p>
         </div>
         <div class="d-f it-c jc-b brd-b pt-20 pb-10">
           <div class="img d-f it-c ">
-            <img class="mr-10" src="imges/avi.svg" alt="pdf-file" width="40px" height="40px">
+            <img loading="lazy" class="mr-10" src="imges/avi.svg" alt="pdf-file" width="40px" height="40px">
             <div class="font-s"><p>My-Video-File.avi</p> <span class="fs-15 font-s d-b tex-c pt-10">Admin</span> </div>
           </div>
           <p class="btn-sh ml-10">4.9mb</p>
         </div>
         <div class="d-f it-c jc-b brd-b pt-10 pb-10">
           <div class="img d-f it-c ">
-            <img class="mr-10" src="imges/psd.svg" alt="psd-file" width="40px" height="40px">
+            <img loading="lazy" class="mr-10" src="imges/psd.svg" alt="psd-file" width="40px" height="40px">
             <div class="font-s"><p>My-Psd-File.pdf</p> <span class="fs-15 font-s d-b tex-c pt-10">Ahmed</span> </div>
           </div>
           <p class="btn-sh ml-10">4.5mb</p>
         </div>
         <div class="d-f it-c jc-b brd-b pt-10 pb-10 ">
           <div class="img d-f it-c ">
-            <img class="brd-6 mr-10" src="imges/zip.svg" alt="zib-file" width="40px" height="40px">
+            <img loading="lazy" class="brd-6 mr-10" src="imges/zip.svg" alt="zib-file" width="40px" height="40px">
             <div class="font-s"><p>My-Zip-File.pdf</p> <span class="fs-15 font-s d-b tex-c pt-10">User</span> </div>
           </div>
           <p class="btn-sh ml-10">8.9mb</p>
         </div>
         <div class="d-f it-c jc-b brd-b pt-10 pb-10">
           <div class="img d-f  it-c ">
-            <img class="brd-6 mr-10 " src="imges/dll.svg" alt="dll-file" width="40px" height="40px">
+            <img loading="lazy" class="brd-6 mr-10 " src="imges/dll.svg" alt="dll-file" width="40px" height="40px">
             <div class="font-s"><p>My-DLL-File.pdf</p> <span class="fs-15 font-s d-b tex-c pt-10">MAdmin</span> </div>
           </div>
           <p class="btn-sh ml-10">8.9mb</p>
         </div>
         <div class="d-f it-c jc-b pt-10 pb-10 ">
           <div class="img d-f it-c">
-            <img class="brd-6 mr-10" src="imges/eps.svg" alt="ebs-file" width="40px" height="40px">
+            <img loading="lazy" class="brd-6 mr-10" src="imges/eps.svg" alt="ebs-file" width="40px" height="40px">
             <div class="font-s"><p>My-Eps-File.pdf</p> <span class="fs-15 font-s d-b tex-c pt-10">Designer</span> </div>
           </div>
           <p class="btn-sh ml-10">7.9mb</p>
@@ -282,7 +279,7 @@
             <li class="pt-25 pb-10 pl-20 crunet font-s">Test The Project</li>
             <li class="pt-25 pb-10 pl-20 done font-s">Finish The Project & Get Money</li>
           </ul>
-          <img class="d-n" src="imges/project.png" alt="project" width="160px" height="152px">
+          <img loading="lazy" class="d-n" src="imges/project.png" alt="project" width="160px" height="152px">
         </div>
       </div>
       <div class="reminders p-20 brd-6 bg-w">
@@ -295,7 +292,7 @@
       <div class="post p-20 brd-6 bg-w">
         <h2>Latest Post</h2>
         <div class="mt-25 d-f it-c brd-b pb-15">
-          <img class="brd-50 mr-15" src="imges/avatar.png" alt="user" width="48px" height="48px">
+          <img loading="lazy" class="brd-50 mr-15" src="imges/avatar.png" alt="user" width="48px" height="48px">
           <p class="fw-600">Ahmed Nabil <span class="fs-15 tex-c pt-10 d-b fw-500">About 3 Hours Ago</span></p>
         </div>
         <p class="lin fw-500 pt-15 pb-15 brd-b fs-16 font-s t-cc tex-c">You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.</p>
@@ -342,10 +339,10 @@
               <td>Ministry</td>
               <td>$5300</td>
               <td>
-                <img src="imges/team-01.png" alt="team-01"/>
-                <img src="imges/team-02.png" alt="team-02"/>
-                <img src="imges/team-03.png" alt="team-03"/>
-                <img src="imges/team-05.png" alt="team-0"/>
+                <img loading="lazy" src="imges/team-01.png" alt="team-01"/>
+                <img loading="lazy" src="imges/team-02.png" alt="team-02"/>
+                <img loading="lazy" src="imges/team-03.png" alt="team-03"/>
+                <img loading="lazy" src="imges/team-05.png" alt="team-0"/>
               </td>
               <td>
                 <span class="btn-o">Pending</span>
@@ -357,9 +354,9 @@
               <td>Elzero Company</td>
               <td>$1500</td>
               <td>
-                <img src="imges/team-02.png" alt="team-02"/>
-                <img src="imges/team-03.png" alt="team-03"/>
-                <img src="imges/team-05.png" alt="team-0"/>
+                <img loading="lazy" src="imges/team-02.png" alt="team-02"/>
+                <img loading="lazy" src="imges/team-03.png" alt="team-03"/>
+                <img loading="lazy" src="imges/team-05.png" alt="team-0"/>
               </td>
               <td><span class="btn-b">In Progress</span></td>
             </tr>
@@ -369,8 +366,8 @@
               <td>Bouba</td>
               <td>$800</td>
               <td>
-                <img src="imges/team-02.png" alt="" />
-                <img src="imges/team-03.png" alt="" />
+                <img loading="lazy" src="imges/team-02.png" alt="" />
+                <img loading="lazy" src="imges/team-03.png" alt="" />
               </td>
               <td><span class="btn-g">Completed</span></td>
             </tr>
@@ -380,8 +377,8 @@
               <td>Mahmoud</td>
               <td>$600</td>
               <td>
-                <img src="imges/team-01.png" alt="" />
-                <img src="imges/team-02.png" alt="" />
+                <img loading="lazy" src="imges/team-01.png" alt="" />
+                <img loading="lazy" src="imges/team-02.png" alt="" />
               </td>
               <td><span class="btn-g">Completed</span></td>
             </tr>
@@ -391,8 +388,8 @@
               <td>Sayed</td>
               <td>$300</td>
               <td>
-                <img src="imges/team-01.png" alt="" />
-                <img src="imges/team-03.png" alt="" />
+                <img loading="lazy" src="imges/team-01.png" alt="" />
+                <img loading="lazy" src="imges/team-03.png" alt="" />
               </td>
               <td><span class="btn-r">Rejected</span></td>
             </tr >
@@ -402,10 +399,10 @@
               <td>Arena Company</td>
               <td>$2600</td>
               <td>
-                <img src="imges/team-01.png" alt="" />
-                <img src="imges/team-02.png" alt="" />
-                <img src="imges/team-03.png" alt="" />
-                <img src="imges/team-04.png" alt="" />
+                <img loading="lazy" src="imges/team-01.png" alt="" />
+                <img loading="lazy" src="imges/team-02.png" alt="" />
+                <img loading="lazy" src="imges/team-03.png" alt="" />
+                <img loading="lazy" src="imges/team-04.png" alt="" />
               </td>
               <td><span class="btn-g">Completed</span></td>
             </tr >
@@ -419,7 +416,10 @@
   <!-- End content-->
 </div>
 
+  <!--Main Js File  -->
+  <script src="js/main.js"></script>
   <!--Font-Awesome Js File  -->
   <script src="js/all.min.js"></script>
+  </script>
 </body>
 </html>
