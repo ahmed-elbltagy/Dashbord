@@ -299,9 +299,6 @@
 .lin{
   line-height: 1.8;
 }
-.bg{
-  background-color: #bed4f4c0 !important;
-}
 .bg-s{
   background-color: var(--second-back);
 }

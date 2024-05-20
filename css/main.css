@@ -28,7 +28,7 @@ a{
 --second-back:#eee;
 --alt-color:#0059d5 ;
 --tex-color:#747373 ;
---border-color:#afafafb3;
+--border-color:#e0e0e0;
 --main-transition:.3s ;
 --box-shadow: 4px 4px 20px  #e6e9ec;
 --green-color:#22c55e;
@@ -64,6 +64,7 @@ a{
   top: 0px;
   position: sticky;
   z-index: 2;
+  box-shadow: var(--box-shadow);
 }
 .container aside img{
   padding-top: 25px;
@@ -169,7 +170,7 @@ a{
   height:5px;
   border-radius: 50%;
   background-color: #f44336;
-  top:8px;
+  top:6px;
   left:10px
 }
 @media(max-width:767px){
